@@ -1,1 +1,0 @@
-# szinok.github.io
