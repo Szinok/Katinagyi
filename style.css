@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a280e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.garden-container {
+    margin: 20px auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.garden {
+    position: relative;
+    width: 1500px; /* Elég széles a kert a görgetéshez */
+    height: 100%;
+}
+
+.garden img {
+    image-rendering: pixelated; /* Éles pixelmegjelenítés */
+    width: 90px; /* Alap szélesség 90px */
+    height: 90px; /* Alap magasság 90px */
+    position: absolute;
+    user-select: none; /* Megakadályozza a kijelölést */
+    pointer-events: auto; /* Engedélyezi a kattintási eseményeket */
+}
+
+/* Csicsóka nagy változat specifikus stílusa */
+.garden img.csicsoka_large {
+    width: 90px; /* Szélesség 90px */
+    height: 360px; /* Magasság 270px */
+}
+
+/* Locsolókanna és csap stílusai */
+.kanna {
+    width: 30px; /* 3x10px */
+    height: 30px; /* 3x10px */
+    position: absolute;
+    right: 180px; /* A jobb oldalról 180px-re */
+    top: 270px; /* Locsolókanna függőleges pozíciója */
+}
+
+.csap {
+    width: 190px; /* 19x10px */
+    height: 240px; /* 8x30px */
+    position: absolute;
+    right: 40px; /* A jobb oldalról 40px-re */
+    top: 110px; /* Csap függőleges pozíciója */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px; /* Jelentősen megnövelt távolság a sorok között */
+}
+
+.water-status {
+    position: absolute;
+    top: 10px; /* Felső pozíció */
+    right: 10px; /* Jobb pozíció */
+    font-size: 24px; /* Betűméret */
+    color: #14ecd3; /* Szín */ 
+}
